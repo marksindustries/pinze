@@ -4,7 +4,7 @@ from typing import Optional
 
 class Questions(BaseModel):
     questions:Optional[str]
-    options:Optional[list[str]]
+    options:list[str]
     answer:Optional[str]
 
 class ImagePost(BaseModel):
