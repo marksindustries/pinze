@@ -1,10 +1,10 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional,List
 
 
 class Questions(BaseModel):
     questions:Optional[str]
-    options:list[str]
+    options:List[str]
     answer:Optional[str]
 
 class ImagePost(BaseModel):
